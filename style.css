@@ -1,0 +1,230 @@
+*{ 
+ margin: 0%; 
+ /*alterou a marem e colou tudo na esquerda */ 
+ padding: 0; 
+ /* parece ter alterado apenas os links e buttões, algo haver com fonte talvez? */ 
+ box-sizing: border-box; 
+} 
+
+body{ 
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    background-color: #f9f9f9;
+} 
+
+nav{ 
+    position: fixed; 
+    /* fixou os elementos do nav numa posição especifica da tela */ 
+    top: 0%; 
+    /* deixou os elementos na margem extrema do topo*/ 
+    width: 100%; 
+    /* fez que o topo da tela contasse com toda a sua largura*/ 
+    background-color: #3333338c; 
+    /* mudou a cor do fundo do topo da tela */ 
+    padding: 10px 0;
+} 
+
+nav ul{ 
+    list-style-type: none; 
+    /* retirouo marcador da lista dentro do nav*/ 
+    display: flex; /* atraves do flex, as informações foram umas para o lado das outras de forma horiznotal por haver espaço */ 
+    justify-content: center;
+    /*moveu as informações ao centro da tela apos o uso do display flex*/ 
+} 
+
+nav ul li{ 
+    margin: 0 20px;/* criou um espassamento entre as informações*/ 
+} 
+
+nav ul li a{ 
+    color: white; 
+    /*mudou a cor do texto */ 
+     text-decoration: none;  
+    /* removeu as underlines dos texto de link*/  
+    font-size: 18px; 
+    /* mudou o tamanho do texto */ 
+    padding: 10px; 
+    /* aumentou o espassamento das palavras*/ 
+    transition: color 0.3s; 
+    /* preparação para uma transição de cores */
+} 
+
+nav ul li a:hover { 
+/* transição de cores caso o mouse esteja em cima do link */
+    color: #5fb16df5; 
+} 
+
+section:not(#home){
+    padding: 100px 20px; 
+    /* auterou o padding, e o espaçamento geral da pagina */ 
+    text-align: center; 
+    /* centralizou texto */ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    /* autera o tamanho nesse caso aumentando o tamanho da altura para o tamnhado maximo da tela */
+} 
+
+#home{
+    /* background-color: #4A90E2; */
+    background-image: url(https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000001702/dac3a26570b5ca1ddf703bf0add7cc7c527f71a2b56521baf69e20c7a573c610); 
+    background-size: cover; 
+    /* fez o background ser coberto pela imagem  */
+    background-repeat: no-repeat; 
+    /* fez não repeir o bacjground */
+    color: #ffffff; 
+    height: 100vh; 
+    /* deixou a home MUITO ACIMA */
+    text-align: center; 
+    /* centralizou a home */ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    /* alteraran as posições da home do site */ 
+    align-items: center; 
+    font-size: 1.5em;
+    /* aumentou a fonte do texto */ 
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+#home h1{
+    text-decoration: underline;  
+    text-shadow: 2px 2px 1px #000000;  
+    background-color: #00000046;  
+    border-radius: 10px;
+} 
+
+#home p{
+    text-shadow: 2px 2px 1px #000000; 
+    background-color: #00000046; 
+    border-radius: 20px;
+} 
+
+
+.content{
+display: flex; 
+/* alterou o pocisionamento deixando texto ao lado da imagem */ 
+flex-direction: row; 
+/* nao notei grande mudança */ 
+align-items: center; 
+/* deixou o texto alinhado com o centro da imagem */ 
+justify-content: center;
+/* ? */
+} 
+
+.content img{
+    width: 400px; 
+    height: 350px; 
+    /* mudança do tamanha da imagem que está dentro do content*/ 
+    object-fit: cover; 
+    margin-right: 20px; 
+    /* mudança minima na marem */
+    border-radius: 8px; 
+    /* mudança na borda */ 
+} 
+
+.content .text{ 
+    max-width: 600px; 
+    /* mudou o quão para a direita o texto pode ir  */
+    text-align: left;  
+    /* alinhou o texto para a esquerda */
+} 
+
+.content .text h2{ 
+    font-size: 2em;
+    /* aumentou o tamanho da imagem */ 
+    margin-bottom: 20px; 
+    /* mudança de margem */
+    color: #ffffff; 
+    /* mudança da cor do h2 */
+} 
+
+.content .text p{
+    font-size: 1.1em; 
+    /* mudança do tamanho do texto */ 
+    color: #ffffff;
+    /* mudança da cor */ 
+} 
+
+#services{
+    background-image: url(https://terraria.wiki.gg/images/2/2e/Forest_background_10.png);  
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    font-family: 'Times New Roman', Times, serif; 
+    text-shadow: -1px 2px 1px #000000; 
+    font-size: 1.3em;
+}  
+#services h2{
+    text-decoration: underline; 
+    font-size: 1.6em; 
+    
+} 
+#services p{
+    background-color: #00000046; 
+    border-radius: 15px; 
+    margin-left: -10px;
+}
+
+#about{
+    background-image: url(https://terraria.wiki.gg/images/f/f4/Hallow_background_6.png); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    font-family: 'Times New Roman', Times, serif; 
+    text-shadow: -1px 2px 1px #000000; 
+    font-size: 1.3em;
+}  
+#about h2{
+    text-decoration: underline; 
+    font-size: 1.6em;
+} 
+#about p{
+    background-color: #00000046; 
+    border-radius: 15px; 
+    margin-left: -10px;
+}
+
+#contact{
+    background-image: url(https://terraria.wiki.gg/images/a/a4/Jungle_background_7.png); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif; 
+    text-shadow: -1px 2px 1px #000000; 
+    font-size: 1.3em;
+}   
+#contact h2{
+    text-decoration: underline; 
+    font-size: 1.6em;
+} 
+#contact p{
+    background-color: #00000046; 
+    border-radius: 15px; 
+    margin-left: -10px;
+}
+#contact a{
+    color: #ffffff; 
+}
+
+.cta-button{
+margin-top: 30px; 
+/* ? */ 
+background-color: #5f7cb1f5;
+/* cor do botão */
+color: rgb(255, 255, 255); 
+/* cor */ 
+padding: 15px 30px; 
+/* aumento do tamanho */ 
+font-size: 18px;
+/* aumento da fonte */  
+font-family: 'Times New Roman', Times, serif;
+border: none; 
+/* tirou a borda */ 
+border-radius: 15px; 
+/* mudança da borda */ 
+cursor: pointer; 
+/* transforma o cursor no cursor de quando algo é clicavel */ 
+box-shadow: 6px 6px 6px rgb(0, 0, 0); 
+/* sombra para um botão */ 
+transition: background-color 1s ease, transform 1s ease; 
+/* animação do botão piscar */
+}
